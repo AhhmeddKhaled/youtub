@@ -1,0 +1,17 @@
+.signIn {
+    border: var(--border);
+    padding: .30em .75em;
+    border-radius: var(--border-radius);
+    color: rgb(0, 102, 255);
+    transition: .4s;
+}
+.signIn:hover {
+    background: rgba(144, 241, 241,.2);
+}
+.signIn svg {
+    margin-right: 5px;
+}
+.signIn span {
+    font-size: 16px;
+    font-weight: 600;
+}

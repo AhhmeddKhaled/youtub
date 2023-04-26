@@ -1,0 +1,42 @@
+.setting {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(-95%,105%);
+    box-shadow: 0 0 10px 1px rgb(236, 233, 233);
+    min-width: 300px;
+    border-radius: 1px;
+}
+.setting .list-group .list-group-item ,
+.setting .accordion .accordion-item {
+    border: none;
+    transition: .4s;
+    cursor: pointer;
+}
+.setting .list-group .list-group-item.item-setting {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid;
+    border-color:  #d8d6d6 transparent #d8d6d6 transparent;
+}
+.setting .accordion .accordion-item h2 button , 
+.setting .accordion .accordion-item h2 button:before {
+    background-color: transparent;
+    color: inherit;
+}
+.setting .list-group .list-group-item:hover ,
+.setting .accordion .accordion-item:hover h2 button {
+    background: var(--hover);
+}
+.setting .accordion .accordion-item h2 button ,
+.setting .list-group .list-group-item {
+    padding: 1rem;
+}
+:is(.setting .list-group .list-group-item,.setting .accordion .accordion-item) span:first-child {
+    margin-right: 15px;
+    margin-left: 10px;
+}
+:is(.setting .list-group .list-group-item , .setting .accordion .accordion-item ) span svg {
+    width: 24px;
+    height: 24px;
+}

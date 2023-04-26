@@ -1,0 +1,52 @@
+:root {
+    --border: 1px solid #ced4da;
+    --hover: rgba(219, 212, 212, 0.5);
+    --border-radius: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+.App {
+    padding: 20px;
+}
+button {
+    border: none;
+    background-color: transparent;
+}
+.hover {
+    position: relative;
+}
+.hover::before {
+    content: '';
+    position: absolute;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    transform: translate(-5px,-5px);
+    left: 0;
+    top: 0;
+    background-color: var(--hover);
+    border-radius: 50%;
+    transition: .5s;
+    opacity: 0;
+}
+.hover:hover:before {
+    opacity: 1;
+}
